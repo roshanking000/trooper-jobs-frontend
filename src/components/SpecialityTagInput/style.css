@@ -1,0 +1,149 @@
+/* Example Styles for React Tags*/
+.app {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Example Styles for React Tags*/
+
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.ReactTags__tags {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput {
+  width: 250px;
+  border-radius: 1000px;
+  display: inline-block;
+  flex-grow: 0;
+}
+
+.ReactTags__tagInput input.ReactTags__tagInputField,
+.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  padding-left: 24px;
+  height: 48px;
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
+  background: transparent;
+  border-radius: 1000px;
+  color: rgba(244, 244, 247, 0.8);
+  border: 1px solid rgba(244, 244, 247, 0.08);
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+}
+
+.ReactTags__selected {
+  width:100%;
+  margin-top: 10px;
+  /* margin-left: 20px; */
+  overflow: auto;
+}
+
+.ReactTags__preset {
+  width: fit-content;
+  margin-top: 10px;
+  /* margin-left: 20px; */
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tagspan {
+  border: 1px solid rgba(244, 244, 247, 0.08);
+  color: white;
+  font-size: 14px;
+  display: inline-flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 12px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 35 44 / var(--tw-bg-opacity));
+}
+
+.ReactTags__selected div.ReactTags__tagdiv {
+  display: inline-flex;
+  --tw-shadow: 0px 0px 8px #2F40FF;
+  --tw-shadow-colored: 0px 0px 8px var(--tw-shadow-color);
+  --tw-gradient-to: #2F40FF var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #8B65F6 var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-from: #F5A55B var(--tw-gradient-from-position);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  border-radius: 12px;
+  padding: 1px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.ReactTags__preset div.ReactTags__tagpreset {
+  display: inline-flex;
+  border-radius: 12px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border: 2px solid rgba(244, 244, 247, 0.08);
+  cursor: pointer;
+}
+
+.ReactTags__preset span.ReactTags__tagpreset {
+  color: rgba(244, 244, 247, 0.6);
+  font-size: 14px;
+  display: inline-flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 12px;
+}
+
+.ReactTags__selected button.ReactTags__remove {
+  color: rgba(244, 244, 247, 0.5);
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Styles for suggestions */
+.ReactTags__suggestions {
+  position: absolute;
+  margin-left: 24px;
+  white-space: nowrap;
+}
+
+.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: 0.05em 0.01em 0.5em rgba(0, 0, 0, 0.2);
+  background: #1C1C27;
+  color: white;
+  width: 200px;
+}
+
+.ReactTags__suggestions li {
+  /* border-bottom: 1px solid #ddd; */
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.ReactTags__suggestions li mark {
+  background: none;
+  color: rgba(244, 244, 247, 0.5);
+  font-weight: 600;
+}
+
+.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+  background: rgba(244, 244, 247, 0.3);
+  cursor: pointer;
+}
+
+.ReactTags__remove {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+}

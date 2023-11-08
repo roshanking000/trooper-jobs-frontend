@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-SemiBold.ttf");
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(244, 244, 247, 0.05);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(244, 244, 247, 0.1);
+  border-radius: 14px;
+  border: 1px solid rgba(244, 244, 247, 0.1);
+}
+
+textarea {
+  cursor: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  background: #000;
+}
+
+thead th:first-child {
+  width: 5%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+td,
+th {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .not_mobile {
+    display: none;
+  }
+
+  thead th:first-child {
+    width: 60%;
+  }
+
+  thead th:nth-child(2) {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .min-minus-5rem {
+    min-height: calc(100vh - 5rem);
+  }
+}
+
+.rounded-button {
+  background-color: #1A1A23;
+  border: 1px solid rgba(244, 244, 247, 0.08);
+  border-radius: 1000px;
+}
+
+.rounded-button:hover {
+  background: rgba(255, 255, 255, 0.04);
+  mix-blend-mode: normal;
+  box-shadow: 0px 0px 8px #2F40FF;
+  backdrop-filter: blur(16px);
+  border-radius: 1000px;
+}
+
+.selected-item {
+  background: rgba(255, 255, 255, 0.04);
+  mix-blend-mode: normal;
+  box-shadow: 0px 0px 8px #2F40FF;
+  backdrop-filter: blur(16px);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* -webkit-box-shadow: 0 0 0 100px rgba() inset !important; */
+  /* -webkit-box-shadow: none; */
+  transition: background-color 5000000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: white;
+}
+
+.lazy-load-image-background {
+  border-radius: 9999px;
+  background-color: #1A1A23;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+div {
+  white-space: pre-wrap;
+} 
+
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.doubleline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.singleline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
